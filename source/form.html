@@ -6,14 +6,14 @@
   </head>
   <body class="page__body">
     <header class="main-header">
-      <a class="main-header__logo">
+      <a class="main-header__logo" href="/">
         <img src="img/logo.svg" width="185" height="96" alt="Sedona">
       </a>
       <nav class="main-nav">
         <button class="main-nav__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
         <div class="main-nav__wrapper">
           <ul class="main-nav__list">
-            <li class="main-nav__item main-nav__item--current">
+            <li class="main-nav__item">
               <a href="/">
                 Главная
               </a>
@@ -23,7 +23,7 @@
                 Фото и видео
               </a>
             </li>
-            <li class="main-nav__item">
+            <li class="main-nav__item main-nav__item--current">
               <a href="form.html">
                 Форма отзыва
               </a>
@@ -38,108 +38,119 @@
       </nav>
     </header>
     <main class="main-container">
-      <section class="intro">
-        <div class="intro__wrapper">
-          <div class="intro__banner">
-            <img src="img/intro-banner.svg" width="282" height="214" alt="Welcome to the gorgeous">
-          </div>
-          <h1 class="main-container__header">СЕДОНА — небольшой городок в Аризоне, заслуживающий большего!</h1>
-          <p class="intro__text">Рассмотрим 5 причин, по которым Седона круче, чем гранд каньон!</p>
+      <section class="banner">
+        <div class="banner__wrapper">
+          <h1 class="visually-hidden">Отзыв Седона</h1>
+          <img src="img/SEDONA.svg" width="229" height="39" alt="Sedona">
         </div>
       </section>
-      <section class="img-reason">
-        <div class="img-reason__wrapper">
-          <h2 class="visually-hidden">Причина №1</h2>
-          <div class="img-reason__description reason">
-            <div class="reason__title">Настоящий городок</div>
-            <div class="reason__number">№1</div>
-            <div class="reason__subtitle">Седона не аттракцион для туристов, там течет своя жизнь</div>
-          </div>
-          <div class="img-reason__picture"></div>
+      <section class="form">
+        <div class="form__wrapper">
+          <h2 class="form__title headline">Оставьте свой отзыв</h2>
+          <p class="form__subtitle subtitle">Помогите нашим отелям стать лучше! Оставьте отзыв о них,<br> а также о посещенных вами достопримечательностях</p>
+          <form class="review-form" action="#" method="POST">
+            <div class="review-form__part review-form__part--half">
+              <div class="review-form__title review-form__title--simple">Представьтесь:</div>
+              <label class="review-form__field form-field">
+                <span class="form-field__label">Имя*:</span>
+                <input class="form-field__control form-control form-control--required input" type="text" name="add-review-name" id="add-review-name" required placeholder="Пётр">
+              </label>
+              <label class="review-form__field form-field">
+                <span class="form-field__label">Фамилия*:</span>
+                <input class="form-field__control form-control form-control--required input" type="text" name="add-review-surname" id="add-review-surname" required placeholder="Пустота">
+              </label>
+              <label class="review-form__field form-field">
+                <span class="form-field__label">Отчество:</span>
+                <input class="form-field__control form-control input" type="text" name="add-review-patronymic" id="add-review-patronymic" placeholder="Викторович">
+              </label>
+            </div>
+            <div class="review-form__part review-form__part--half">
+              <div class="review-form__title review-form__title--simple">Контактная информация:</div>
+              <label class="review-form__field form-field">
+                <span class="form-field__label">Контактный телефон*:</span>
+                <input class="form-field__control form-control form-control--required input input--phone" type="tel" name="add-review-recipient-phone" id="add-review-recipient-phone" placeholder="Введите телефон">
+              </label>
+              <label class="review-form__field form-field">
+                <span class="form-field__label">Электронная почта*:</span>
+                <input class="form-field__control form-control form-control--required input input--email" type="email" name="add-review-recipient-email" id="add-review-recipient-email" placeholder="Введите e-mail">
+              </label>
+            </div>
+            <div class="review-form__part">
+              <div class="review-form__title">Ваше общее впечатление:</div>
+              <label class="review-form__option radio">
+                <input class="radio__control" type="radio" name="effect" value="good" checked>
+                <span class="radio__label">Скорее положительное</span>
+              </label>
+              <label class="review-form__option radio">
+                <input class="radio__control" type="radio" name="effect" value="bad">
+                <span class="radio__label">Скорее отрицательное</span>
+              </label>
+              <label class="review-form__option radio">
+                <input class="radio__control" type="radio" name="effect" value="nohow">
+                <span class="radio__label">Затрудняюсь ответить</span>
+              </label>
+            </div>
+            <div class="review-form__part">
+              <div class="review-form__title">Посещенные достопримечательности:</div>
+              <label class="review-form__option checkbox">
+                <input class="checkbox__control" type="checkbox" name="attractions" value="1" checked>
+                <span class="checkbox__label">Мост Дьявола</span>
+              </label>
+              <label class="review-form__option checkbox">
+                <input class="checkbox__control" type="checkbox" name="attractions" value="2">
+                <span class="checkbox__label">Гора-Колокол</span>
+              </label>
+              <label class="review-form__option checkbox">
+                <input class="checkbox__control" type="checkbox" name="attractions" value="3">
+                <span class="checkbox__label">Слайд-парк</span>
+              </label>
+              <label class="review-form__option checkbox">
+                <input class="checkbox__control" type="checkbox" name="attractions" value="4">
+                <span class="checkbox__label">Красные скалы</span>
+              </label>
+            </div>
+            <div class="review-form__part">
+              <div class="review-form__title">Опишите свои эмоции:</div>
+              <label class="review-form__field form-field">
+                <textarea class="form-field__control form-control textarea" name="review-form-emotions" id="review-form-emotions" placeholder="Опишите подробно все свои восторги"></textarea>
+              </label>
+            </div>
+            <button class="review-form__button button" type="submit">Отправить отзыв</button>
+            <p class="review-form__legend form-legend">
+              * — обязательные поля
+            </p>
+          </form>
         </div>
       </section>
-      <section class="benefits">
-        <div class="benefits__wrapper">
-          <h2 class="visually-hidden">Наши преимущества</h2>
-          <ul class="benefits__list">
-            <li class="benefits__item benefits__item--habitation">
-              <h3 class="benefits__title">Жильё</h3>
-              <p class="benefits__description">Рекомендуем пожить в настоящем мотеле, все как в кино!</p>
-            </li>
-            <li class="benefits__item benefits__item--food">
-              <h3 class="benefits__title">Еда</h3>
-              <p class="benefits__description">Всегда заказывайте ФИРМЕННЫЙ БУРГЕР, Вы НЕ разочаруетесь!</p>
-            </li>
-            <li class="benefits__item benefits__item--souvenirs">
-              <h3 class="benefits__title">Сувениры</h3>
-              <p class="benefits__description">Не только китайского, но и местного производства!</p>
-            </li>
-          </ul>
+      <section class="error modal">
+        <h3 class="modal__title headline">Что-то пошло не так!</h3>
+        <p class="modal__subtitle subtitle">Проверьте поля, выделенные красным, скорее всего вы забыли их заполнить</p>
+        <a class="error__button modal__button button" href="#">OK</a>
+      </section>
+      <section class="sucsess modal modal--active">
+        <h3 class="modal__title headline">Ваш отзыв отправлен!</h3>
+        <p class="modal__subtitle subtitle">Спасибо за ваше участие, ваш отзыв уже поступил к нам. В ближайшее время мы опубликуем его на сайте.</p>
+        <div class="modal__button-wrapper">
+          <a class="sucsess__button modal__button button" href="#">Закрыть окно</a>
         </div>
       </section>
-      <section class="img-reason img-reason--right">
-        <div class="img-reason__wrapper">
-          <h2 class="visually-hidden">Причина №2</h2>
-          <div class="img-reason__description reason">
-            <div class="reason__title">Там есть мост дьявола</div>
-            <div class="reason__number">№2</div>
-            <div class="reason__subtitle">Да, по нему можно пройти! Если Вы осмелитесь, конечно</div>
-          </div>
-          <div class="img-reason__picture"></div>
-        </div>
-      </section>
-      <section class="reasons-list">
-        <div class="reasons-list__wrapper">
-          <h2 class="visually-hidden">Список причин</h2>
-          <div class="reasons-list__item reason">
-            <div class="reason__title">Небольшая площадь</div>
-            <div class="reason__number">№3</div>
-            <div class="reason__subtitle">Все интересные места находятся очень близко</div>
-          </div>
-          <div class="reasons-list__item reason">
-            <div class="reason__title">Красивая дорога</div>
-            <div class="reason__number">№4</div>
-            <div class="reason__subtitle">Ехать в Седону из Лас-Вегаса совсем не скучно!</div>
-          </div>
-          <div class="reasons-list__item reason">
-            <div class="reason__title">Мало туристов</div>
-            <div class="reason__number">№5</div>
-            <div class="reason__subtitle">Большинство едет в Гранд Каньон и толпится там</div>
-          </div>
-        </div>
-      </section>
-      <section class="find-hotel">
-        <div class="find-hotel__wrapper">
-          <h2 class="find-hotel__title">Заинтересовались?</h2>
-          <p class="find-hotel__text">
-            Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в Cедоне
-          </p>
-          <a class="find-hotel__button button" href="#">Найти гостиницу</a>
-        </div>
-      </section>
-      <section class="map">
-        <div class="map__wrapper">
-          <h2 class="visually-hidden">Карта</h2>
-          <iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3Aff1546a805c40a37cbdd765ed06976788c2d30b5a24514205718c66c6dd83a9c&amp;source=constructor" width="100%" height="350" frameborder="0"></iframe>
-        </div>
-      </section>
-      <footer class="main-footer">
-        <div class="main-footer__wrapper">
-          <div class="main-footer__hash">#visitSEDONA</div>
-          <ul class="main-footer__social social">
-            <li class="social__item">
-              <a class="social__link social__link--vkontakte" href="https://vk.com/htmlacademy"></a>
-            </li>
-            <li class="social__item">
-              <a class="social__link social__link--telegram" href="https://t.me/htmlacademy"></a>
-            </li>
-            <li class="social__item">
-              <a class="social__link social__link--youtube" href="https://www.youtube.com/user/htmlacademyru"></a>
-            </li>
-          </ul>
-          <a class="main-footer__copyright developer" href="https://htmlacademy.ru/intensive/adaptive">Разработано</a>
-        </div>
-      </footer>
     </main>
+    <footer class="main-footer">
+      <div class="main-footer__wrapper">
+        <div class="main-footer__hash">#visitSEDONA</div>
+        <ul class="main-footer__social social">
+          <li class="social__item">
+            <a class="social__link social__link--vkontakte" href="https://vk.com/htmlacademy"></a>
+          </li>
+          <li class="social__item">
+            <a class="social__link social__link--telegram" href="https://t.me/htmlacademy"></a>
+          </li>
+          <li class="social__item">
+            <a class="social__link social__link--youtube" href="https://www.youtube.com/user/htmlacademyru"></a>
+          </li>
+        </ul>
+        <a class="main-footer__copyright developer" href="https://htmlacademy.ru/intensive/adaptive">Разработано</a>
+      </div>
+    </footer>
   </body>
 </html>
