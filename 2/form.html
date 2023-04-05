@@ -50,8 +50,8 @@
           <h2 class="form__title headline">Оставьте свой отзыв</h2>
           <p class="form__subtitle subtitle">Помогите нашим отелям стать лучше! Оставьте отзыв о них,<br> а также о посещенных вами достопримечательностях</p>
           <form class="review-form" action="#" method="POST">
-            <div class="review-form__part review-form__part--half">
-              <div class="review-form__title review-form__title--simple">Представьтесь:</div>
+            <fieldset class="review-form__part review-form__part--half">
+              <legend class="review-form__title review-form__title--simple">Представьтесь:</legend>
               <label class="review-form__field form-field">
                 <span class="form-field__label">Имя*:</span>
                 <input class="form-field__control form-control form-control--required input" type="text" name="add-review-name" id="add-review-name" required placeholder="Пётр">
@@ -64,9 +64,9 @@
                 <span class="form-field__label">Отчество:</span>
                 <input class="form-field__control form-control input" type="text" name="add-review-patronymic" id="add-review-patronymic" placeholder="Викторович">
               </label>
-            </div>
-            <div class="review-form__part review-form__part--half">
-              <div class="review-form__title review-form__title--simple">Контактная информация:</div>
+            </fieldset>
+            <fieldset class="review-form__part review-form__part--half">
+              <legend class="review-form__title review-form__title--simple">Контактная информация:</legend>
               <label class="review-form__field form-field">
                 <span class="form-field__label">Контактный телефон*:</span>
                 <input class="form-field__control form-control form-control--required input input--phone" type="tel" name="add-review-recipient-phone" id="add-review-recipient-phone" placeholder="Введите телефон">
@@ -75,9 +75,9 @@
                 <span class="form-field__label">Электронная почта*:</span>
                 <input class="form-field__control form-control form-control--required input input--email" type="email" name="add-review-recipient-email" id="add-review-recipient-email" placeholder="Введите e-mail">
               </label>
-            </div>
-            <div class="review-form__part">
-              <div class="review-form__title">Ваше общее впечатление:</div>
+            </fieldset>
+            <fieldset class="review-form__part">
+              <legend class="review-form__title">Ваше общее впечатление:</legend>
               <label class="review-form__option radio">
                 <input class="radio__control" type="radio" name="effect" value="good" checked>
                 <span class="radio__label">Скорее положительное</span>
@@ -90,9 +90,9 @@
                 <input class="radio__control" type="radio" name="effect" value="nohow">
                 <span class="radio__label">Затрудняюсь ответить</span>
               </label>
-            </div>
-            <div class="review-form__part">
-              <div class="review-form__title">Посещенные достопримечательности:</div>
+            </fieldset>
+            <fieldset class="review-form__part">
+              <legend class="review-form__title">Посещенные достопримечательности:</legend>
               <label class="review-form__option checkbox">
                 <input class="checkbox__control" type="checkbox" name="attractions" value="1" checked>
                 <span class="checkbox__label">Мост Дьявола</span>
@@ -109,13 +109,13 @@
                 <input class="checkbox__control" type="checkbox" name="attractions" value="4">
                 <span class="checkbox__label">Красные скалы</span>
               </label>
-            </div>
-            <div class="review-form__part">
-              <div class="review-form__title">Опишите свои эмоции:</div>
+            </fieldset>
+            <fieldset class="review-form__part">
+              <legend class="review-form__title">Опишите свои эмоции:</legend>
               <label class="review-form__field form-field">
                 <textarea class="form-field__control form-control textarea" name="review-form-emotions" id="review-form-emotions" placeholder="Опишите подробно все свои восторги"></textarea>
               </label>
-            </div>
+            </fieldset>
             <button class="review-form__button button" type="submit">Отправить отзыв</button>
             <p class="review-form__legend form-legend">
               * — обязательные поля
@@ -138,7 +138,7 @@
     </main>
     <footer class="main-footer">
       <div class="main-footer__wrapper">
-        <div class="main-footer__hash">#visitSEDONA</div>
+        <a class="main-footer__hash" href="">#visitSEDONA</a>
         <ul class="main-footer__social social">
           <li class="social__item">
             <a class="social__link social__link--vkontakte" href="https://vk.com/htmlacademy"></a>
