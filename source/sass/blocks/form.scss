@@ -1,5 +1,13 @@
+.form {
+  padding-top: 36px;
+}
+
 .form__title,
 .form__subtitle {
   text-align: center;
   margin: 0;
+}
+
+.form__subtitle {
+  padding: 24px 20px 27px;
 }

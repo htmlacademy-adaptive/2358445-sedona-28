@@ -17,6 +17,7 @@
 @import "./blocks/copyright.scss";
 @import "./blocks/like.scss";
 @import "./blocks/modal.scss";
+@import "./blocks/modal-fade.scss";
 //блоки главной
 @import "./blocks/intro.scss";
 @import "./blocks/reasons.scss";
@@ -32,4 +33,8 @@
 @import "./blocks/form.scss";
 @import "./blocks/review-form.scss";
 @import "./blocks/form-field.scss";
-
+@import "./blocks/input.scss";
+@import "./blocks/radio.scss";
+@import "./blocks/checkbox.scss";
+@import "./blocks/textarea.scss";
+@import "./blocks/form-legend.scss";
