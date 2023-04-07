@@ -1,0 +1,32 @@
+.benefits {
+  @include list-reset;
+  text-align: left;
+  padding: 0 18px 18px;
+}
+
+.benefits__item {
+  padding: 33px 0 25px 47px;
+}
+
+.benefits__item--habitation {
+  background: url("../../img/icon-house.svg") no-repeat 0 25px;
+  background-size: 39px 37px;
+}
+
+.benefits__item--food {
+  background: url("../../img/icon-burger.svg") no-repeat 0 25px;
+  background-size: 40px 35px;
+}
+
+.benefits__item--souvenirs {
+  background: url("../../img/icon-gift.svg") no-repeat 0 25px;
+  background-size: 32px 38px;
+}
+
+.benefits__title {
+  margin: 0 0 16px 0;
+}
+
+.benefits__description {
+  margin: 0;
+}

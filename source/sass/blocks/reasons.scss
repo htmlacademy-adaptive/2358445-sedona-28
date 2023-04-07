@@ -1,0 +1,26 @@
+.reasons {
+  text-align: center;
+  padding-top: 32px;
+}
+
+.reasons__header,
+.reasons__text {
+  padding: 0 18px;
+  margin: 0;
+}
+
+.reasons__header {
+  padding-bottom: 35px;
+}
+
+.reasons__text {
+  padding-bottom: 53px;
+}
+
+.reasons__list {
+  @include list-reset;
+}
+
+.reasons__item {
+  line-height: 0px;
+}
