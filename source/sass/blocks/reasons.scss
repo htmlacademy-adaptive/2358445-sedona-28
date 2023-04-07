@@ -6,7 +6,6 @@
 .reasons__header,
 .reasons__text {
   padding: 0 18px;
-  margin: 0;
 }
 
 .reasons__header {
@@ -23,16 +22,16 @@
 
 .reasons__item {
   position: relative;
-}
 
-.reasons__item--grey-border::after {
-  content: "";
-  position: absolute;
-  background-color: #d6d6d6;
-  width: calc(100% - 36px);
-  height: 1px;
-  left: 18px;
-  bottom: 0;
+  &--grey-border::after {
+    content: "";
+    position: absolute;
+    background-color: #d6d6d6;
+    width: calc(100% - 36px);
+    height: 1px;
+    left: 18px;
+    bottom: 0;
+  }
 }
 
 .reasons__picture {

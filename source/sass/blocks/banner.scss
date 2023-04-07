@@ -1,12 +1,12 @@
 .banner {
   height: 158px;
-  background: url("../../img/back-desktop.jpg") no-repeat 50% 100%;
+  background: #89706e url("../../img/back-desktop.jpg") no-repeat 50% 100%;
   background-size: cover;
   padding-top: 52px;
   text-align: center;
   position: relative;
-}
 
-.banner::after {
-  @include bottom-triangle("../../img/intro-triangle.svg", 1200px 56px, 56px);
+  &::after {
+    @include bottom-triangle("../../img/intro-triangle.svg", 1200px 56px, 56px);
+  }
 }

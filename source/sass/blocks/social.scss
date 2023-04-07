@@ -10,20 +10,20 @@
   background-repeat: no-repeat;
   background-position: 50% 50%;
   margin: 30px 3px 18px;
+
+  &--vkontakte {
+    background-image: url("../../img/icon-vk.svg");
+  }
+
+  &--telegram {
+    background-image: url("../../img/icon-telegram.svg");
+  }
+
+  &--youtube {
+    background-image: url("../../img/icon-youtube.svg");
+  }
 }
 
 .social__item {
   display: inline-block;
-}
-
-.social__link--vkontakte {
-  background-image: url("../../img/icon-vk.svg");
-}
-
-.social__link--telegram {
-  background-image: url("../../img/icon-telegram.svg");
-}
-
-.social__link--youtube {
-  background-image: url("../../img/icon-youtube.svg");
 }

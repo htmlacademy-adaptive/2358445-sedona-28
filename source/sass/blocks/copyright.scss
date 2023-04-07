@@ -5,6 +5,16 @@
   text-transform: uppercase;
   color: #000000;
   display: inline-block;
+
+  &:hover,
+  &:hover .copyright__icon {
+    color: #81b3d2;
+  }
+
+  &:active,
+  &:active .copyright__icon {
+    color: #b3b3b3;
+  }
 }
 
 .copyright__text {
@@ -12,12 +22,6 @@
   padding-right: 8px;
 }
 
-.copyright:hover,
-.copyright:hover svg {
-  color: #81b3d2;
-}
-
-.copyright:active,
-.copyright:active svg {
-  color: #b3b3b3;
+.copyright__icon {
+  vertical-align: middle;
 }

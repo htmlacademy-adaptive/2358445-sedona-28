@@ -1,28 +1,28 @@
 .reason {
   padding: 37px 18px 36px;
-}
 
-.reason--first {
-  position: relative;
-  padding-top: 70px;
-}
+  &--first {
+    position: relative;
+    padding-top: 70px;
+  }
 
-.reason--first::before {
-  @include top-triangle("../../img/advantures-triangle.svg", cover, 37px);
-}
+  &--first::before {
+    @include top-triangle("../../img/advantures-triangle.svg", cover, 37px);
+  }
 
-.reason--blue {
-  background-color: $base-color;
-  color: $light-color;
+  &--blue {
+    background-color: $base-color;
+    color: $light-color;
+  }
+
+  &--grey {
+    background-color: #eeeeee;
+    padding: 27px 18px 24px;
+  }
 }
 
 .reason__subtitle--blue {
   color: $light-color;
-}
-
-.reason--grey {
-  background-color: #eeeeee;
-  padding: 27px 18px 24px;
 }
 
 .reason__title {
