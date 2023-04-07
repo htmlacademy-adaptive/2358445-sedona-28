@@ -1,10 +1,23 @@
 .copyright {
   font-weight: 400;
   font-size: 14px;
-  line-height: 40px;
+  line-height: 21px;
   text-transform: uppercase;
   color: #000000;
   display: inline-block;
-  padding-right: 45px;
-  background: url("../../img/htmlacademy.svg") no-repeat 100% 50%;
+}
+
+.copyright__text {
+  vertical-align: middle;
+  padding-right: 8px;
+}
+
+.copyright:hover,
+.copyright:hover svg {
+  color: #81b3d2;
+}
+
+.copyright:active,
+.copyright:active svg {
+  color: #b3b3b3;
 }

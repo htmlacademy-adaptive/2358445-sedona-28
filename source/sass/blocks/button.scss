@@ -10,4 +10,14 @@
   width: 100%;
   max-width: 458px;
   font-family: "PT Sans", "Arial", sans-serif;
+  cursor: pointer;
+}
+
+.button:hover {
+  background-color: #679ec1;
+}
+
+.button:active {
+  background-color: #5496bd;
+  color: rgba($light-color, 0.3);
 }

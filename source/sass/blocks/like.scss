@@ -3,10 +3,16 @@
   background: url("../../img/like-icon.svg") no-repeat 50% 50%;
   width: 23px;
   height: 21px;
+  vertical-align: top;
+  display: inline-block;
 }
 
 .like__quantity {
   font-weight: 700;
   font-size: 14px;
   line-height: 21px;
+  display: inline-block;
+  margin-left: 10px;
+  padding-top: 5px;
+  vertical-align: top;
 }

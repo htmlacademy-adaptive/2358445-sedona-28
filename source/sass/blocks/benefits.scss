@@ -1,11 +1,11 @@
 .benefits {
   @include list-reset;
   text-align: left;
-  padding: 0 18px 18px;
+  padding: 0 18px 46px;
 }
 
 .benefits__item {
-  padding: 33px 0 25px 47px;
+  padding: 33px 0 0 47px;
 }
 
 .benefits__item--habitation {
@@ -24,9 +24,5 @@
 }
 
 .benefits__title {
-  margin: 0 0 16px 0;
-}
-
-.benefits__description {
-  margin: 0;
+  margin-bottom: 16px;
 }
