@@ -1,0 +1,25 @@
+.photo__image {
+  width: 100%;
+  display: block;
+}
+
+.photo__caption {
+  text-align: left;
+  padding-top: 5px;
+}
+
+.photo__title,
+.photo__author {
+  margin: 0;
+}
+
+.photo__title {
+  text-transform: uppercase;
+  padding: 10px 0 2px;
+  font-size: 14px;
+}
+
+.photo__author {
+  padding-bottom: 10px;
+  font-size: 14px;
+}

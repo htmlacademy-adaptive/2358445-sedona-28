@@ -1,0 +1,28 @@
+.benefits {
+  @include list-reset;
+  text-align: left;
+  padding: 0 18px 46px;
+}
+
+.benefits__item {
+  padding: 33px 0 0 47px;
+
+  &--habitation {
+    background: url("../../img/icon-house.svg") no-repeat 0 25px;
+    background-size: 39px 37px;
+  }
+
+  &--food {
+    background: url("../../img/icon-burger.svg") no-repeat 0 25px;
+    background-size: 40px 35px;
+  }
+
+  &--souvenirs {
+    background: url("../../img/icon-gift.svg") no-repeat 0 25px;
+    background-size: 32px 38px;
+  }
+}
+
+.benefits__title {
+  margin-bottom: 16px;
+}

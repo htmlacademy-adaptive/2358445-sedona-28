@@ -1,0 +1,29 @@
+.social {
+  @include list-reset;
+  font-size: 0;
+}
+
+.social__link {
+  width: 48px;
+  height: 48px;
+  display: inline-block;
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  margin: 30px 3px 18px;
+
+  &--vkontakte {
+    background-image: url("../../img/icon-vk.svg");
+  }
+
+  &--telegram {
+    background-image: url("../../img/icon-telegram.svg");
+  }
+
+  &--youtube {
+    background-image: url("../../img/icon-youtube.svg");
+  }
+}
+
+.social__item {
+  display: inline-block;
+}

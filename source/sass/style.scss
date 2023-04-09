@@ -1,1 +1,41 @@
-// Начните писать стили здесь
+//добавляем переменные и миксины
+@import "./variables.scss";
+@import "./mixins.scss";
+
+//базовые стили
+@import "./global/fonts.scss";
+@import "./global/global.scss";
+
+//стили блоков
+@import "./blocks/main-header.scss";
+@import "./blocks/main-nav.scss";
+@import "./blocks/title.scss";
+@import "./blocks/subtitle.scss";
+@import "./blocks/button.scss";
+@import "./blocks/main-footer.scss";
+@import "./blocks/social.scss";
+@import "./blocks/copyright.scss";
+@import "./blocks/like.scss";
+@import "./blocks/modal.scss";
+@import "./blocks/modal-fade.scss";
+//блоки главной
+@import "./blocks/intro.scss";
+@import "./blocks/reasons.scss";
+@import "./blocks/reason.scss";
+@import "./blocks/benefits.scss";
+@import "./blocks/find-hotel.scss";
+//блоки каталога
+@import "./blocks/banner.scss";
+@import "./blocks/galery.scss";
+@import "./blocks/photo.scss";
+@import "./blocks/presentation.scss";
+//блоки формы
+@import "./blocks/form.scss";
+@import "./blocks/review-form.scss";
+@import "./blocks/form-field.scss";
+@import "./blocks/form-control.scss";
+@import "./blocks/input.scss";
+@import "./blocks/radio.scss";
+@import "./blocks/checkbox.scss";
+@import "./blocks/textarea.scss";
+@import "./blocks/form-legend.scss";

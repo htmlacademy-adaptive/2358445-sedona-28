@@ -1,0 +1,27 @@
+.copyright {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 21px;
+  text-transform: uppercase;
+  color: #000000;
+  display: inline-block;
+
+  &:hover,
+  &:hover .copyright__icon {
+    color: #81b3d2;
+  }
+
+  &:active,
+  &:active .copyright__icon {
+    color: #b3b3b3;
+  }
+}
+
+.copyright__text {
+  vertical-align: middle;
+  padding-right: 8px;
+}
+
+.copyright__icon {
+  vertical-align: middle;
+}

@@ -1,0 +1,26 @@
+.galery {
+  text-align: center;
+  padding-top: 37px;
+}
+
+.galery__title {
+  margin-bottom: 25px;
+}
+
+.galery__subtitle {
+  margin-bottom: 37px;
+}
+
+.galery__list {
+  @include list-reset;
+  border-top: 1px solid #e5e5e5;
+}
+
+.galery__item {
+  border-bottom: 1px solid #e5e5e5;
+  padding: 25px 20px;
+}
+
+.galery__figure {
+  margin: 0;
+}

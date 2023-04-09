@@ -1,0 +1,24 @@
+.input {
+  border: 0;
+  background-color: #f2f2f2;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 26px;
+  padding: 16px;
+  font-family: "PT Sans", "Arial", sans-serif;
+  color: #000000;
+
+  &--phone {
+    background-image: url("../../img/icon-phone.svg");
+    background-repeat: no-repeat;
+    background-position: 100% 50%;
+    padding-right: 58px;
+  }
+
+  &--email {
+    background-image: url("../../img/icon-email.svg");
+    background-repeat: no-repeat;
+    background-position: 100% 50%;
+    padding-right: 58px;
+  }
+}

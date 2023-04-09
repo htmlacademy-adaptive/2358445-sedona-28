@@ -1,0 +1,39 @@
+.reasons {
+  text-align: center;
+  padding-top: 32px;
+}
+
+.reasons__header,
+.reasons__text {
+  padding: 0 18px;
+}
+
+.reasons__header {
+  padding-bottom: 35px;
+}
+
+.reasons__text {
+  padding-bottom: 16px;
+}
+
+.reasons__list {
+  @include list-reset;
+}
+
+.reasons__item {
+  position: relative;
+
+  &--grey-border::after {
+    content: "";
+    position: absolute;
+    background-color: #d6d6d6;
+    width: calc(100% - 36px);
+    height: 1px;
+    left: 18px;
+    bottom: 0;
+  }
+}
+
+.reasons__picture {
+  display: block;
+}

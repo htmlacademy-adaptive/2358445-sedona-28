@@ -1,0 +1,34 @@
+.reason {
+  padding: 37px 18px 36px;
+
+  &--first {
+    position: relative;
+    padding-top: 70px;
+  }
+
+  &--first::before {
+    @include top-triangle("../../img/advantures-triangle.svg", cover, 37px);
+  }
+
+  &--blue {
+    background-color: $base-color;
+    color: $light-color;
+  }
+
+  &--grey {
+    background-color: #eeeeee;
+    padding: 27px 18px 24px;
+  }
+}
+
+.reason__subtitle--blue {
+  color: $light-color;
+}
+
+.reason__title {
+  margin-bottom: 12px;
+}
+
+.reason__number {
+  margin-bottom: 15px;
+}

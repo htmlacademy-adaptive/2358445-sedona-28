@@ -1,0 +1,18 @@
+.form-control {
+  outline: none;
+
+  &::placeholder {
+    color: #000000;
+    opacity: 0.3;
+  }
+
+  &:active {
+    box-shadow: 0 0 0 4px inset #e5e5e5;
+    background-color: $light-color;
+  }
+
+  &:hover {
+    box-shadow: 0 0 0 4px inset #e5e5e5;
+    background-color: #e5e5e5;
+  }
+}
