@@ -1,5 +1,7 @@
 .reason {
   padding: 37px 18px 36px;
+  display: grid;
+  height: 100%;
 
   &--first {
     position: relative;
@@ -8,6 +10,10 @@
 
   &--first::before {
     @include top-triangle("../../img/advantures-triangle.svg", cover, 37px);
+
+    @media (min-width: $tablet-width) {
+      @include delete-triangle();
+    }
   }
 
   &--blue {

@@ -7,4 +7,8 @@
   color: lighten($color: #000000, $amount: 60%);
   padding: 2px 20px;
   margin: 0;
+
+  @media (min-width: $tablet-width) {
+    margin-top: 31px;
+  }
 }

@@ -2,6 +2,13 @@
   @include list-reset;
   text-align: left;
   padding: 0 18px 46px;
+
+  @media (min-width: $tablet-width) {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 331px;
+    padding: 0;
+  }
 }
 
 .benefits__item {
@@ -20,6 +27,26 @@
   &--souvenirs {
     background: url("../../img/icon-gift.svg") no-repeat 0 25px;
     background-size: 32px 38px;
+  }
+
+  @media (min-width: $tablet-width) {
+    text-align: center;
+    padding: 156px 33px 0 33px;
+
+    &--habitation {
+      background-position: 50% 60px;
+      background-size: 77px 72px;
+    }
+
+    &--food {
+      background-position: 50% 60px;
+      background-size: 80px 68px;
+    }
+
+    &--souvenirs {
+      background-position: 50% 60px;
+      background-size: 67px 75px;
+    }
   }
 }
 

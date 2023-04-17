@@ -7,6 +7,12 @@
   text-align: center;
 }
 
+.form__title {
+  @media (min-width: $desktop-width) {
+    font-size: 30px;
+  }
+}
+
 .form__subtitle {
   padding: 24px 20px 27px;
 }

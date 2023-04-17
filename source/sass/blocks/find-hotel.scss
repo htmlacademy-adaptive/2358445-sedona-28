@@ -6,6 +6,10 @@
 .find-hotel__title {
   font-size: 21px;
   margin-bottom: 22px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 30px;
+  }
 }
 
 .find-hotel__text {

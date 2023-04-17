@@ -1,8 +1,60 @@
+.review-form {
+  @media (min-width: $tablet-width) {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 57px;
+    margin: 60px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin: 0 120px;
+    column-gap: 100px;
+  }
+}
+
 .review-form__part {
   border: 0;
   border-top: 1px solid #e5e5e5;
   padding: 69px 20px 22px;
   position: relative;
+
+  @media (min-width: $tablet-width) {
+    border-top: 0;
+    padding: 69px 0 0;
+
+    &--full-width {
+      grid-column: 1 / -1;
+    }
+  }
+}
+
+.review-form__part--half {
+  @media (min-width: $tablet-width) {
+    &::after {
+      background-color: #dbdbdb;
+      content: "";
+      display: block;
+      position: absolute;
+      top: 0;
+      right: -33px;
+      width: 1px;
+      height: 100%;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    &::after {
+      right: -53px;
+    }
+  }
+}
+
+.review-form__wrapper {
+  @media (min-width: $tablet-width) {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
 }
 
 .review-form__title {
@@ -16,10 +68,24 @@
   position: absolute;
   top: 24px;
   left: 18px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 21px;
+  }
 }
 
 .review-form__option {
   display: block;
+
+  @media (min-width: $tablet-width) {
+    width: 260px;
+  }
+}
+
+.review-form__option.checkbox {
+  @media (min-width: $desktop-width) {
+    width: 238px;
+  }
 }
 
 .review-form__button {
@@ -27,4 +93,15 @@
   margin: 0 auto;
   max-width: calc(100% - 40px);
   margin-top: 18px;
+
+  @media (min-width: $tablet-width) {
+    margin: 31px 0 0 0;
+    max-width: 100%;
+  }
+}
+
+.review-form__legend {
+  @media (min-width: $tablet-width) {
+    align-self: center;
+  }
 }

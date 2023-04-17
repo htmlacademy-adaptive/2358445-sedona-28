@@ -3,6 +3,15 @@
   padding: 37px 0 40px 0;
 }
 
+.main-footer__wrapper {
+  @media (min-width: $tablet-width) {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+}
+
 .main-footer__hash {
   font-weight: 700;
   font-size: 21px;
