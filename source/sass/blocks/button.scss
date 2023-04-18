@@ -16,8 +16,13 @@
     background-color: #679ec1;
   }
 
-  &:active {
+  &:active,
+  &:focus {
     background-color: #5496bd;
     color: rgba($light-color, 0.3);
+  }
+
+  &:disabled {
+    background-color: #e5e5e5;
   }
 }

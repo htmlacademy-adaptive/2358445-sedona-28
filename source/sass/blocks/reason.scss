@@ -3,6 +3,10 @@
   display: grid;
   height: 100%;
 
+  @media (min-width: $tablet-width) {
+    min-height: 256px;
+  }
+
   &--first {
     position: relative;
     padding-top: 70px;

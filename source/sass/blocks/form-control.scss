@@ -6,7 +6,8 @@
     opacity: 0.3;
   }
 
-  &:active {
+  &:active,
+  &:focus {
     box-shadow: 0 0 0 4px inset #e5e5e5;
     background-color: $light-color;
   }

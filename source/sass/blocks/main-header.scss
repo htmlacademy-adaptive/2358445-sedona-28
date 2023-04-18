@@ -1,8 +1,13 @@
 .main-header {
   text-align: center;
   position: relative;
-  height: 56px;
   z-index: 1;
+  height: 56px;
+
+  @media (min-width: $tablet-width) {
+    min-height: 56px;
+    height: auto;
+  }
 }
 
 .main-header__logo {
@@ -12,6 +17,6 @@
     position: absolute;
     top: 0;
     left: 50%;
-    margin-left: -93px;
+    transform: translateX(-50%);
   }
 }

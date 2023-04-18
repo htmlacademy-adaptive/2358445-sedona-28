@@ -9,4 +9,13 @@
   &::after {
     @include bottom-triangle("../../img/intro-triangle.svg", 1200px 57px, 57px);
   }
+
+  @media (min-width: $tablet-width) {
+    height: 518px;
+
+    .intro__banner img {
+      width: 461px;
+      height: 350px;
+    }
+  }
 }

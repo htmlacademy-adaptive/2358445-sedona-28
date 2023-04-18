@@ -30,7 +30,6 @@
   @media (min-width: $tablet-width) {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 256px 331px 256px 256px;
   }
 }
 
@@ -93,4 +92,9 @@
 
 .reasons__picture {
   display: block;
+
+  @media (min-width: $tablet-width) {
+    height: 100%;
+    object-fit: cover;
+  }
 }

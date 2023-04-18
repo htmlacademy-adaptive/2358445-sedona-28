@@ -5,6 +5,19 @@
   height: 21px;
   vertical-align: top;
   display: inline-block;
+  cursor: pointer;
+  padding: 0;
+
+  & svg {
+    opacity: 0.3;
+  }
+
+  @media (min-width: $desktop-width) {
+    & svg {
+      color: $light-color;
+      opacity: 1;
+    }
+  }
 }
 
 .like__quantity {
