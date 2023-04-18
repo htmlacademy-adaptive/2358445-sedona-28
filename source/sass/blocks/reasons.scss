@@ -1,15 +1,33 @@
 .reasons {
   text-align: center;
   padding-top: 32px;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 47.5px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-top: 59px;
+  }
 }
 
 .reasons__header,
 .reasons__text {
   padding: 0 18px;
+  max-width: 300px;
+  margin: 0 auto;
+
+  @media (min-width: $tablet-width) {
+    max-width: 530px;
+  }
 }
 
 .reasons__header {
-  padding-bottom: 35px;
+  margin-bottom: 35px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 28px;
+  }
 }
 
 .reasons__text {
@@ -46,6 +64,10 @@
     bottom: 0;
   }
 
+  &:last-child .reason--grey {
+    padding-bottom: 30px;
+  }
+
   @media (min-width: $tablet-width) {
     &--grey-border::after {
       display: none;
@@ -75,7 +97,6 @@
       grid-row: 3 / 4;
       display: grid;
       grid-template-columns: 1fr 1fr 1fr;
-      grid-template-rows: 256px;
 
       .reasons__description {
         grid-column: 3 / 4;
@@ -92,9 +113,18 @@
 
 .reasons__picture {
   display: block;
+  height: 260px;
+  object-fit: cover;
 
   @media (min-width: $tablet-width) {
     height: 100%;
-    object-fit: cover;
+  }
+}
+
+.reasons__benefits.benefits {
+  margin: 0 101px 44px;
+
+  @media (min-width: $tablet-width) {
+    margin: 0 0 44px;
   }
 }

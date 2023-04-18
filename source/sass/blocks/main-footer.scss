@@ -1,6 +1,10 @@
 .main-footer {
   text-align: center;
   padding: 37px 0 40px 0;
+
+  @media (min-width: $tablet-width) {
+    padding: 2px 0 40px 0;
+  }
 }
 
 .main-footer__wrapper {
@@ -20,6 +24,6 @@
   color: #000000;
 }
 
-.main-footer__social {
-  margin: 30px 0 18px;
+.main-footer__social.social {
+  margin: 28px 0 21px;
 }
