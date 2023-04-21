@@ -1,8 +1,90 @@
+.review-form {
+  margin-bottom: 19px;
+
+  @media (min-width: $tablet-width) {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin: 55.5px 58px 69px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin: 0 120px 70px;
+    column-gap: 100px;
+  }
+}
+
 .review-form__part {
   border: 0;
   border-top: 1px solid #e5e5e5;
   padding: 69px 20px 22px;
   position: relative;
+
+  @media (min-width: $tablet-width) {
+    border-top: 0;
+    padding: 78px 0 0;
+
+    &--full-width {
+      grid-column: 1 / -1;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 94px 0 0;
+  }
+}
+
+.review-form__part--half:first-child {
+  @media (min-width: $tablet-width) {
+    padding-right: 28px;
+
+    &::after {
+      background-color: #dbdbdb;
+      content: "";
+      display: block;
+      position: absolute;
+      top: 0;
+      right: -2px;
+      width: 1px;
+      height: 100%;
+    }
+
+    & .review-form__title {
+      @media (min-width: $tablet-width) {
+        transform: translateX(-14px);
+
+        &::before,
+        &::after {
+          display: none;
+        }
+      }
+
+      @media (min-width: $desktop-width) {
+        transform: none;
+      }
+    }
+
+    @media (min-width: $desktop-width) {
+      transform: none;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-right: 0;
+
+    &::after {
+      top: 33px;
+      right: -53px;
+      height: 90%;
+    }
+  }
+}
+
+.review-form__wrapper {
+  @media (min-width: $tablet-width) {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+  }
 }
 
 .review-form__title {
@@ -16,10 +98,53 @@
   position: absolute;
   top: 24px;
   left: 18px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 21px;
+    width: 100%;
+    top: 25px;
+    left: 0;
+
+    &::after,
+    &::before {
+      background-color: #dbdbdb;
+      content: "";
+      display: block;
+      position: absolute;
+      top: 50%;
+      right: 0;
+      width: 123px;
+      height: 1px;
+    }
+
+    &::before {
+      right: auto;
+      left: 0;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    top: 39px;
+
+    &::after,
+    &::before {
+      width: 280px;
+    }
+  }
 }
 
 .review-form__option {
   display: block;
+
+  @media (min-width: $tablet-width) {
+    width: 275px;
+  }
+}
+
+.review-form__option.checkbox {
+  @media (min-width: $desktop-width) {
+    width: 228px;
+  }
 }
 
 .review-form__button {
@@ -27,4 +152,89 @@
   margin: 0 auto;
   max-width: calc(100% - 40px);
   margin-top: 18px;
+
+  @media (min-width: $tablet-width) {
+    margin: 31px 0 0 0;
+    max-width: 100%;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-left: 96px;
+    max-width: 384px;
+  }
+}
+
+.review-form__legend {
+  @media (min-width: $tablet-width) {
+    align-self: center;
+  }
+}
+
+.review-form__part:nth-child(2) {
+  padding-bottom: 17px;
+}
+
+.review-form__part:nth-child(3) {
+  padding-top: 65px;
+  padding-bottom: 13px;
+  padding-left: 101px;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 74.5px;
+    margin-top: 19.5px;
+    padding-left: 36px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-top: 98.5px;
+    padding-left: 51px;
+    padding-bottom: 23px;
+
+    & .review-form__title {
+      top: 32px;
+    }
+  }
+}
+
+.review-form__part:nth-child(4) {
+  padding-left: 101px;
+  padding-top: 91px;
+  padding-bottom: 13px;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 100px;
+    padding-left: 84px;
+    padding-bottom: 5px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-top: 147px;
+    padding-left: 43px;
+    padding-bottom: 35px;
+  }
+}
+
+.review-form__part--half:nth-child(2) {
+  @media (min-width: $tablet-width) {
+    padding-left: 28px;
+
+    & .review-form__title {
+      @media (min-width: $tablet-width) {
+        transform: translateX(12px);
+
+        &::before,
+        &::after {
+          display: none;
+        }
+      }
+
+      @media (min-width: $desktop-width) {
+        transform: none;
+      }
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-left: 0;
+  }
 }

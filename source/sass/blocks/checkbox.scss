@@ -5,4 +5,46 @@
   padding: 16px;
   font-family: "PT Sans", "Arial", sans-serif;
   color: #000000;
+  position: relative;
+  cursor: pointer;
+  padding-left: 62px;
+  margin-bottom: 4px;
+
+  &:hover .checkbox__mark {
+    background-color: #e5e5e5;
+  }
+
+  &:focus .checkbox__mark,
+  &:active .checkbox__mark {
+    background-color: #d5d5d5;
+  }
+
+  &:focus .checkbox__control:checked + .checkbox__mark::before,
+  &:active .checkbox__control:checked + .checkbox__mark::before {
+    opacity: 0.3;
+  }
+
+  @media (min-width: $tablet-width) {
+    width: 256px;
+  }
+}
+
+.checkbox__mark {
+  position: absolute;
+  top: 4px;
+  left: 0;
+  width: 46px;
+  height: 46px;
+  border-radius: 4px;
+  background-color: $photo-background;
+}
+
+.checkbox__control:checked + .checkbox__mark::before {
+  content: "";
+  position: absolute;
+  top: 15px;
+  left: 12px;
+  width: 22px;
+  height: 16px;
+  background: url("../../img/checkbox-on.svg") no-repeat 50% 50%;
 }

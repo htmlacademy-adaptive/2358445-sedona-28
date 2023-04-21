@@ -1,11 +1,38 @@
 .photo__image {
   width: 100%;
   display: block;
+  max-width: 280px;
+  margin: 0 auto;
+
+  @media (min-width: $tablet-width) {
+    max-width: 100%;
+  }
 }
 
 .photo__caption {
   text-align: left;
   padding-top: 5px;
+  max-width: 280px;
+  margin: 0 auto;
+
+  @media (min-width: $tablet-width) {
+    background-color: $photo-background;
+    padding: 22px 20px 15px 22px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 100%;
+  }
+
+  @media (min-width: $desktop-width) {
+    position: absolute;
+    z-index: 1;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: $down-color;
+    color: $light-color;
+  }
 }
 
 .photo__title,
@@ -17,9 +44,47 @@
   text-transform: uppercase;
   padding: 10px 0 2px;
   font-size: 14px;
+
+  @media (min-width: $tablet-width) {
+    padding: 0;
+  }
 }
 
 .photo__author {
   padding-bottom: 10px;
   font-size: 14px;
+
+  @media (min-width: $tablet-width) {
+    padding-bottom: 0;
+  }
+}
+
+.photo:not(.photo--large) .photo__image {
+  @media (min-width: $tablet-width) {
+    width: 324px;
+    height: 267px;
+    object-fit: cover;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 100%;
+  }
+}
+
+.photo--large .photo__image {
+  @media (min-width: $tablet-width) {
+    width: 648px;
+    height: 400px;
+    object-fit: cover;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 100%;
+  }
+}
+
+.photo__like {
+  @media (min-width: $tablet-width) {
+    transform: translateY(-3px);
+  }
 }

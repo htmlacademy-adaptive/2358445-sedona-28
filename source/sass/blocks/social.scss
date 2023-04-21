@@ -1,6 +1,11 @@
 .social {
   @include list-reset;
   font-size: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  column-gap: 6px;
 }
 
 .social__link {
@@ -9,7 +14,6 @@
   display: inline-block;
   background-repeat: no-repeat;
   background-position: 50% 50%;
-  margin: 30px 3px 18px;
 
   &--vkontakte {
     background-image: url("../../img/icon-vk.svg");
@@ -22,8 +26,4 @@
   &--youtube {
     background-image: url("../../img/icon-youtube.svg");
   }
-}
-
-.social__item {
-  display: inline-block;
 }

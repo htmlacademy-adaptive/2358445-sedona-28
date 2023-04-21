@@ -5,4 +5,52 @@
   padding: 16px;
   font-family: "PT Sans", "Arial", sans-serif;
   color: #000000;
+  position: relative;
+  cursor: pointer;
+  padding-left: 62px;
+  margin-bottom: 4px;
+
+  &:hover .radio__mark {
+    background-color: #e5e5e5;
+  }
+
+  &:focus .radio__mark,
+  &:active .radio__mark {
+    background-color: #d5d5d5;
+  }
+
+  &:focus .radio__control:checked + .radio__mark::before,
+  &:active .radio__control:checked + .radio__mark::before {
+    opacity: 0.3;
+  }
+
+  @media (min-width: $tablet-width) {
+    width: 296px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: auto;
+    padding-right: 60px;
+  }
+}
+
+.radio__mark {
+  position: absolute;
+  top: 4px;
+  left: 0;
+  width: 46px;
+  height: 46px;
+  border-radius: 46px;
+  background-color: $photo-background;
+}
+
+.radio__control:checked + .radio__mark::before {
+  content: "";
+  position: absolute;
+  top: 15px;
+  left: 15px;
+  width: 16px;
+  height: 16px;
+  background-color: #333333;
+  border-radius: 16px;
 }

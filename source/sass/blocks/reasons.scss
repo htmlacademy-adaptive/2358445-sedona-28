@@ -1,23 +1,54 @@
 .reasons {
   text-align: center;
   padding-top: 32px;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 47.5px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-top: 59px;
+  }
 }
 
 .reasons__header,
 .reasons__text {
   padding: 0 18px;
+  max-width: 300px;
+  margin: 0 auto;
+
+  @media (min-width: $tablet-width) {
+    max-width: 530px;
+  }
 }
 
 .reasons__header {
-  padding-bottom: 35px;
+  margin-bottom: 35px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 28px;
+  }
 }
 
 .reasons__text {
-  padding-bottom: 16px;
+  margin-bottom: 16px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 55px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 44px;
+  }
 }
 
 .reasons__list {
   @include list-reset;
+
+  @media (min-width: $tablet-width) {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+  }
 }
 
 .reasons__item {
@@ -32,8 +63,68 @@
     left: 18px;
     bottom: 0;
   }
+
+  &:last-child .reason--grey {
+    padding-bottom: 30px;
+  }
+
+  @media (min-width: $tablet-width) {
+    &--grey-border::after {
+      display: none;
+    }
+
+    &--first {
+      grid-column: 1 / -1;
+      grid-row: 1 / 3;
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+      grid-template-rows: 256px 331px;
+
+      .reasons__picture {
+        grid-column: 2 / 4;
+        grid-row: 1 / 2;
+      }
+
+      .reasons__benefits {
+        grid-column: 1 / -1;
+        grid-row: 2 / 3;
+      }
+    }
+
+
+    &--second {
+      grid-column: 1 / -1;
+      grid-row: 3 / 4;
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+
+      .reasons__description {
+        grid-column: 3 / 4;
+        grid-row: 1 / -1;
+      }
+
+      .reasons__picture {
+        grid-column: 1 / 3;
+        grid-row: 1 / -1;
+      }
+    }
+  }
 }
 
 .reasons__picture {
   display: block;
+  height: 260px;
+  object-fit: cover;
+
+  @media (min-width: $tablet-width) {
+    height: 100%;
+  }
+}
+
+.reasons__benefits.benefits {
+  margin: 0 101px 44px;
+
+  @media (min-width: $tablet-width) {
+    margin: 0 0 44px;
+  }
 }

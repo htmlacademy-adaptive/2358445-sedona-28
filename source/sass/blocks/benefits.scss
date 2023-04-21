@@ -1,11 +1,15 @@
 .benefits {
   @include list-reset;
   text-align: left;
-  padding: 0 18px 46px;
+
+  @media (min-width: $tablet-width) {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+  }
 }
 
 .benefits__item {
-  padding: 33px 0 0 47px;
+  padding: 32px 0 0 47px;
 
   &--habitation {
     background: url("../../img/icon-house.svg") no-repeat 0 25px;
@@ -21,8 +25,52 @@
     background: url("../../img/icon-gift.svg") no-repeat 0 25px;
     background-size: 32px 38px;
   }
+
+  @media (min-width: $tablet-width) {
+    text-align: center;
+    padding: 156px 40px 0 40px;
+    min-height: 331px;
+
+    &--habitation {
+      background-position: 50% 60px;
+      background-size: 77px 72px;
+    }
+
+    &--food {
+      background-position: 50% 60px;
+      background-size: 80px 68px;
+    }
+
+    &--souvenirs {
+      background-position: 50% 60px;
+      background-size: 67px 75px;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 170px 50px 0 50px;
+
+    &--habitation {
+      background-position: 50% 68px;
+      background-size: 80px 74px;
+    }
+
+    &--food {
+      background-position: 50% 71px;
+      background-size: 73px 69px;
+    }
+
+    &--souvenirs {
+      background-position: 50% 69px;
+      background-size: 78px 75px;
+    }
+  }
 }
 
 .benefits__title {
   margin-bottom: 16px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 24px;
+  }
 }

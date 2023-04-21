@@ -1,8 +1,72 @@
 .presentation {
   text-align: center;
-  padding-top: 17px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 51px;
+  }
+}
+
+.presentation__title {
+  margin-bottom: 27.5px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 30px;
+    margin-bottom: 31.5px;
+  }
+}
+
+.presentation__video {
+  width: 280px;
+  height: 177px;
+  margin: 0 auto -5px;
+  overflow: hidden;
+  position: relative;
+
+  &::after {
+    background: url("../img/icon-polygon.svg") no-repeat 50% 50%;
+    content: "";
+    display: block;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 48px;
+    height: 54px;
+    margin-left: -24px;
+    margin-top: -27px;
+    cursor: pointer;
+  }
+
+  @media (min-width: $tablet-width) {
+    width: 648px;
+    height: 500px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 800px;
+    margin: 0 auto 89px;
+  }
+}
+
+.presentation__image {
+  width: 100%;
+
+  @media (min-width: $tablet-width) {
+    height: 500px;
+    object-fit: cover;
+  }
 }
 
 .presentation__subtitle {
-  padding: 28px 20px 40px;
+  padding: 0 20px 0;
+  margin: 0 auto 39.5px;
+  max-width: 280px;
+
+  @media (min-width: $tablet-width) {
+    margin: 0 auto 88.5px;
+    max-width: 490px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin: 0 auto 86.5px;
+  }
 }

@@ -1,10 +1,17 @@
+html,
 body {
+  box-sizing: border-box;
+  height: 100%;
+  padding: 0;
   margin: 0;
-  color: #000000;
-  background-color: #ffffff;
+}
+
+body {
+  color: $dark-color;
   font-family: "PT Sans", "Arial", sans-serif;
   font-size: 14px;
   line-height: 21px;
+  background-color: $body-background;
 }
 
 *,
@@ -34,4 +41,25 @@ a {
   clip-path: inset(100%);
   clip: rect(0 0 0 0);
   overflow: hidden;
+}
+
+.page__body {
+  margin: 0 auto;
+  box-shadow: 0 5px 15px rgba(0, 1, 1, 0.2);
+  max-width: 1200px;
+  background-color: $light-color;
+  box-sizing: border-box;
+  min-height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.main-header,
+.main-footer {
+  flex-grow: 0;
+  flex-shrink: 0;
+}
+
+.main-container {
+  flex-grow: 1;
 }

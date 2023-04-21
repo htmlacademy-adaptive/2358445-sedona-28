@@ -12,7 +12,9 @@
   }
 
   &:active,
-  &:active .copyright__icon {
+  &:active .copyright__icon,
+  &:focus,
+  &:focus .copyright__icon {
     color: #b3b3b3;
   }
 }

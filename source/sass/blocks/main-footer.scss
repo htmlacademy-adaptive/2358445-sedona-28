@@ -1,6 +1,19 @@
 .main-footer {
   text-align: center;
   padding: 37px 0 40px 0;
+
+  @media (min-width: $tablet-width) {
+    padding: 2px 0 40px 0;
+  }
+}
+
+.main-footer__wrapper {
+  @media (min-width: $tablet-width) {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+  }
 }
 
 .main-footer__hash {
@@ -9,4 +22,8 @@
   line-height: 26px;
   text-transform: uppercase;
   color: #000000;
+}
+
+.main-footer__social.social {
+  margin: 28px 0 21px;
 }

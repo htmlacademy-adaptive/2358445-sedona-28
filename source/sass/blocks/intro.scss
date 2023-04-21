@@ -1,11 +1,22 @@
 .intro {
-  background: #89706e url("../../img/back-desktop.jpg") no-repeat 50% 0;
+  background: #89706e url("../../img/back-desktop.jpg") no-repeat 50% 100%;
   text-align: center;
   height: 389px;
   padding: 90px 0 85px 0;
   position: relative;
+  background-size: cover;
 
   &::after {
     @include bottom-triangle("../../img/intro-triangle.svg", 1200px 57px, 57px);
+  }
+
+  @media (min-width: $tablet-width) {
+    height: 518px;
+    padding: 77px 0 85px 0;
+
+    .intro__banner img {
+      width: 461px;
+      height: 350px;
+    }
   }
 }
