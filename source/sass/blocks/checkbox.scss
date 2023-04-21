@@ -8,6 +8,7 @@
   position: relative;
   cursor: pointer;
   padding-left: 62px;
+  margin-bottom: 4px;
 
   &:hover .checkbox__mark {
     background-color: #e5e5e5;
@@ -22,11 +23,15 @@
   &:active .checkbox__control:checked + .checkbox__mark::before {
     opacity: 0.3;
   }
+
+  @media (min-width: $tablet-width) {
+    width: 256px;
+  }
 }
 
 .checkbox__mark {
   position: absolute;
-  top: 2px;
+  top: 4px;
   left: 0;
   width: 46px;
   height: 46px;

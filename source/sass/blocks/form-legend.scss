@@ -9,6 +9,12 @@
   margin: 0;
 
   @media (min-width: $tablet-width) {
-    margin-top: 31px;
+    margin-top: 38.5px;
+    padding: 2px 4px;
+    font-size: 13.5px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-right: 92px;
   }
 }

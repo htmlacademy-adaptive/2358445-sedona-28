@@ -8,6 +8,7 @@
   position: relative;
   cursor: pointer;
   padding-left: 62px;
+  margin-bottom: 4px;
 
   &:hover .radio__mark {
     background-color: #e5e5e5;
@@ -22,11 +23,20 @@
   &:active .radio__control:checked + .radio__mark::before {
     opacity: 0.3;
   }
+
+  @media (min-width: $tablet-width) {
+    width: 296px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: auto;
+    padding-right: 60px;
+  }
 }
 
 .radio__mark {
   position: absolute;
-  top: 2px;
+  top: 4px;
   left: 0;
   width: 46px;
   height: 46px;
