@@ -1,3 +1,18 @@
+.map {
+  position: relative;
+  height: 350px;
+  background-color: $photo-background;
+}
+
 .map__iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border: none;
+}
+
+.map__iframe img {
   width: 100%;
 }

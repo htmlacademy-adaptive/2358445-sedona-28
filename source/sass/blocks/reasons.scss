@@ -78,7 +78,6 @@
       grid-row: 1 / 3;
       display: grid;
       grid-template-columns: 1fr 1fr 1fr;
-      grid-template-rows: 256px 331px;
 
       .reasons__picture {
         grid-column: 2 / 4;
@@ -113,11 +112,12 @@
 
 .reasons__picture {
   display: block;
-  height: 260px;
-  object-fit: cover;
+  font-size: 0;
+  line-height: 0;
 
-  @media (min-width: $tablet-width) {
-    height: 100%;
+  & img {
+    width: 100%;
+    object-fit: cover;
   }
 }
 
