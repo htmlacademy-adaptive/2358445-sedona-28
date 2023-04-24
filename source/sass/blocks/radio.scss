@@ -29,8 +29,13 @@
   }
 
   @media (min-width: $desktop-width) {
-    width: auto;
-    padding-right: 60px;
+    width: 308px;
+  }
+
+  &:last-child {
+    @media (min-width: $desktop-width) {
+      width: 288px;
+    }
   }
 }
 

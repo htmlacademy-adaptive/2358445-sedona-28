@@ -3,6 +3,7 @@
   height: 350px;
   background-color: $photo-background;
   overflow: hidden;
+  margin-bottom: 10px;
 }
 
 .map__iframe {
@@ -16,4 +17,5 @@
 
 .map__iframe img {
   width: 100%;
+  display: block;
 }

@@ -112,23 +112,18 @@
 
 .reasons__picture {
   display: block;
-  font-size: 0;
-  line-height: 0;
 
   & img {
     width: 100%;
     object-fit: cover;
+    display: block;
   }
 }
 
 .reasons__benefits.benefits {
-  margin: 0 20px 44px;
-
-  @media (min-width: 480px) {
-    margin: 0 101px 44px;
-  }
+  margin: 0 18px 44px;
 
   @media (min-width: $tablet-width) {
-    margin: 0 0 44px;
+    margin: 0;
   }
 }
