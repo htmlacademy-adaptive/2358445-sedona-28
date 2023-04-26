@@ -1,23 +1,17 @@
 .photo__image {
   width: 100%;
   display: block;
-  max-width: 280px;
   margin: 0 auto;
 
   & img {
     width: 100%;
     display: block;
   }
-
-  @media (min-width: $tablet-width) {
-    max-width: 100%;
-  }
 }
 
 .photo__caption {
   text-align: left;
   padding-top: 5px;
-  max-width: 280px;
   margin: 0 auto;
 
   @media (min-width: $tablet-width) {
@@ -26,7 +20,6 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    max-width: 100%;
   }
 
   @media (min-width: $desktop-width) {

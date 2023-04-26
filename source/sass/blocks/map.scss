@@ -13,9 +13,13 @@
   width: 100%;
   height: 100%;
   border: none;
-}
 
-.map__iframe img {
-  width: 100%;
-  display: block;
+  &--nojs {
+    display: none;
+  }
+
+  & img {
+    width: 100%;
+    display: block;
+  }
 }
