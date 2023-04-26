@@ -889,7 +889,9 @@ a {
   height: 100%;
   border: none;
 }
-
+.map__iframe--nojs {
+  display: none;
+}
 .map__iframe img {
   width: 100%;
   display: block;
@@ -1040,23 +1042,16 @@ a {
 .photo__image {
   width: 100%;
   display: block;
-  max-width: 280px;
   margin: 0 auto;
 }
 .photo__image img {
   width: 100%;
   display: block;
 }
-@media (min-width: 768px) {
-  .photo__image {
-    max-width: 100%;
-  }
-}
 
 .photo__caption {
   text-align: left;
   padding-top: 5px;
-  max-width: 280px;
   margin: 0 auto;
 }
 @media (min-width: 768px) {
@@ -1066,7 +1061,6 @@ a {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    max-width: 100%;
   }
 }
 @media (min-width: 1200px) {
