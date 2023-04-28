@@ -1,10 +1,10 @@
 .review-form {
-  margin-bottom: 19px;
+  margin-bottom: 23px;
 
   @media (min-width: $tablet-width) {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    margin: 55.5px 58px 69px;
+    margin: 55.5px 58px 63px;
   }
 
   @media (min-width: $desktop-width) {
@@ -141,12 +141,6 @@
   }
 }
 
-.review-form__option.checkbox {
-  @media (min-width: $desktop-width) {
-    width: 228px;
-  }
-}
-
 .review-form__button {
   display: block;
   margin: 0 auto;
@@ -177,7 +171,7 @@
 .review-form__part:nth-child(3) {
   padding-top: 65px;
   padding-bottom: 13px;
-  padding-left: 101px;
+  padding-left: 18px;
 
   @media (min-width: $tablet-width) {
     padding-top: 74.5px;
@@ -197,7 +191,7 @@
 }
 
 .review-form__part:nth-child(4) {
-  padding-left: 101px;
+  padding-left: 18px;
   padding-top: 91px;
   padding-bottom: 13px;
 

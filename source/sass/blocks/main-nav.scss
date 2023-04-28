@@ -5,20 +5,12 @@
   background-color: $base-color;
   width: 100%;
 
-  &--nojs .main-nav__toggle {
-    display: none;
-  }
-
-  &--nojs {
-    position: static;
-  }
-
   @media (max-width: ($tablet-width - 1px)) {
     &--closed .main-nav__list {
       display: none;
     }
 
-    &--closed.main-nav--nojs .main-nav__list {
+    .main-header--nojs &--closed .main-nav__list {
       display: block;
     }
 
@@ -41,6 +33,14 @@
   }
 }
 
+.main-header--nojs .main-nav__toggle {
+  display: none;
+}
+
+.main-header--nojs .main-nav {
+  position: static;
+}
+
 .main-nav__toggle {
   background: url("../../img/icon-menu.svg");
   width: 22px;
@@ -48,7 +48,7 @@
   border: 0;
   position: absolute;
   top: 17px;
-  right: 17px;
+  right: 21px;
   cursor: pointer;
   z-index: 1;
 

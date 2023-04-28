@@ -27,6 +27,22 @@
   @media (min-width: $tablet-width) {
     width: 256px;
   }
+
+  @media (min-width: $desktop-width) {
+    width: 235px;
+  }
+
+  &:nth-child(3) {
+    @media (min-width: $desktop-width) {
+      width: 218px;
+    }
+  }
+
+  &:last-child {
+    @media (min-width: $desktop-width) {
+      width: 225px;
+    }
+  }
 }
 
 .checkbox__mark {

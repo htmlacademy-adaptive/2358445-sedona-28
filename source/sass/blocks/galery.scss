@@ -40,12 +40,12 @@
 .galery__list {
   @include list-reset;
   border-top: 1px solid #e5e5e5;
-  margin: 36px 60px 17px;
+  margin: 36px 0 17px;
 
   @media (min-width: $tablet-width) {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    margin: 81px 68px 58px;
+    margin: 81px 60px 58px;
   }
 
   @media (min-width: $desktop-width) {
