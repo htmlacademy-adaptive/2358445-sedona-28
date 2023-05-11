@@ -11,7 +11,7 @@
   }
 
   &::after {
-    @include bottom-triangle("../../img/intro-triangle.svg", 1200px 57px, 57px);
+    @include bottom-triangle("../../img/stack.svg#intro-triangle", 1200px 57px, 57px);
   }
 
   @media (min-width: $tablet-width) {

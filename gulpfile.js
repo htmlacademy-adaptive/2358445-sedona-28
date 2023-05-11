@@ -10,7 +10,6 @@ import htmlmin from 'gulp-htmlmin';
 import terser from 'gulp-terser';
 import squoosh from 'gulp-libsquoosh';
 import svgo from 'gulp-svgmin';
-import svgstore from 'gulp-svgstore';
 import { stacksvg } from 'gulp-stacksvg';
 import { deleteAsync } from 'del';
 import sourcemaps from 'gulp-sourcemaps';
@@ -81,14 +80,13 @@ const svg = () => {
   .pipe(svgo())
   .pipe(gulp.dest('build/img'))
 }
-const sprite = () => {
-  return gulp.src('source/img/**/*.svg')
-  .pipe(svgo())
-  .pipe(svgstore({
-    inlineSvg: true
-  }))
-  .pipe(rename('sprite.svg'))
-  .pipe(gulp.dest('build/img'))
+const stack = () => {
+  return gulp.src('./source/img/icons/**/*.svg')
+      .pipe(svgo())
+      .pipe(stacksvg({
+          output: 'stack.svg'
+      }))
+      .pipe(gulp.dest('./build/img/'));
 }
 
 //Copy
@@ -133,7 +131,7 @@ const reload = (done) => {
 
 const watcher = () => {
   gulp.watch('source/sass/**/*.scss', gulp.series(styles));
-  gulp.watch('source/js/*.js', gulp.series(script));
+  gulp.watch('source/js/*.js', gulp.series(scripts));
   gulp.watch('source/*.html').on('change', browser.reload);
 }
 
@@ -147,7 +145,7 @@ export const build = gulp.series(
     html,
     scripts,
     svg,
-    sprite,
+    stack,
     createWebP
   ),
 );
@@ -163,7 +161,7 @@ export default gulp.series(
     html,
     scripts,
     svg,
-    sprite,
+    stack,
     createWebP
   ),
   gulp.series(

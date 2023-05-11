@@ -6,16 +6,31 @@
   color: #000000;
   display: inline-block;
 
-  &:hover,
-  &:hover .copyright__icon {
+  &:hover {
     color: #81b3d2;
+
+    &::after {
+      background-color: #81b3d2;
+    }
   }
 
   &:active,
-  &:active .copyright__icon,
-  &:focus,
-  &:focus .copyright__icon {
+  &:focus {
     color: #b3b3b3;
+
+    &::after {
+      background-color: #b3b3b3;
+    }
+  }
+
+  &::after {
+    content: "";
+    display: inline-block;
+    width: 27px;
+    height: 36px;
+    mask-image: url("../../img/stack.svg#icon-htmlacademy");
+    background-color: #000000;
+    vertical-align: middle;
   }
 }
 

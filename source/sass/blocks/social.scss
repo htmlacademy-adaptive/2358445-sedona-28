@@ -16,14 +16,17 @@
   background-position: 50% 50%;
 
   &--vkontakte {
-    background-image: url("../../img/icon-vk.svg");
+    background-image: url("../../img/stack.svg#icon-vk");
+    background-size: 36px 25px;
   }
 
   &--telegram {
-    background-image: url("../../img/icon-telegram.svg");
+    background-image: url("../../img/stack.svg#icon-telegram");
+    background-size: 24px 25px;
   }
 
   &--youtube {
-    background-image: url("../../img/icon-youtube.svg");
+    background-image: url("../../img/stack.svg#icon-youtube");
+    background-size: 28px 25px;
   }
 }

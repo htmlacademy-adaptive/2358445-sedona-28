@@ -14,7 +14,7 @@
   }
 
   &--first::before {
-    @include top-triangle("../../img/advantures-triangle.svg", cover, 37px);
+    @include top-triangle("../../img/stack.svg#advantures-triangle", cover, 37px);
 
     @media (min-width: $tablet-width) {
       @include delete-triangle();
