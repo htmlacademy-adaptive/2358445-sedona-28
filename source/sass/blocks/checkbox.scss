@@ -2,12 +2,11 @@
   font-weight: 700;
   font-size: 18px;
   line-height: 26px;
-  padding: 16px;
+  padding: 16px 0 16px 62px;
   font-family: "PT Sans", "Arial", sans-serif;
   color: #000000;
   position: relative;
   cursor: pointer;
-  padding-left: 62px;
   margin-bottom: 4px;
 
   &:hover .checkbox__mark {
@@ -25,22 +24,19 @@
   }
 
   @media (min-width: $tablet-width) {
-    width: 256px;
+    width: calc((100% - 92px) / 2);
+    margin-right: 20px;
   }
 
   @media (min-width: $desktop-width) {
-    width: 235px;
-  }
-
-  &:nth-child(3) {
-    @media (min-width: $desktop-width) {
-      width: 218px;
-    }
+    max-width: 256px;
+    min-width: 155px;
+    margin-right: 64px;
   }
 
   &:last-child {
     @media (min-width: $desktop-width) {
-      width: 225px;
+      margin-right: 0;
     }
   }
 }

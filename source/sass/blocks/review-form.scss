@@ -135,10 +135,6 @@
 
 .review-form__option {
   display: block;
-
-  @media (min-width: $tablet-width) {
-    width: 275px;
-  }
 }
 
 .review-form__button {
