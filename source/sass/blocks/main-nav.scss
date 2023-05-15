@@ -15,7 +15,7 @@
     }
 
     &--closed .main-nav__toggle {
-      background: url("../../img/icon-menu.svg");
+      background: url("../../img/stack.svg#icon-menu");
     }
 
     &--opened .main-nav__list {
@@ -23,7 +23,7 @@
     }
 
     &--opened .main-nav__toggle {
-      background: url("../../img/icon-cross.svg");
+      background: url("../../img/stack.svg#icon-cross");
     }
   }
 
@@ -42,7 +42,7 @@
 }
 
 .main-nav__toggle {
-  background: url("../../img/icon-menu.svg");
+  background: url("../../img/stack.svg#icon-menu");
   width: 22px;
   height: 22px;
   border: 0;

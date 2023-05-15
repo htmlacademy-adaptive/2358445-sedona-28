@@ -3,18 +3,20 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Седона - прекрасный туристический город">
     <title>HTML Academy: Седона</title>
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/style.min.css">
     <link rel="icon" href="favicon.ico">
     <link rel="icon" href="img/favicons/icon.svg" type="image/svg+xml">
     <link rel="apple-touch-icon" href="img/favicons/apple.png">
     <link rel="manifest" href="manifest.webmanifest">
+    <link rel="preload" href="fonts/ptsans.woff2" as="font" type="font/woff2" crossorigin="anonymous">
   </head>
   <body>
     <div class="page__body">
       <header class="main-header main-header--nojs">
         <div class="main-header__logo">
-          <img src="img/logo.svg" width="185" height="96" alt="Sedona">
+          <img src="img/logo.svg" width="185" height="96" alt="лого Sedona">
         </div>
         <nav class="main-nav main-nav--closed">
           <button class="main-nav__toggle" type="button">
@@ -146,12 +148,15 @@
             <h2 class="visually-hidden">Карта</h2>
             <a href="https://yandex.ru/map-widget/v1/?um=constructor%3Aff1546a805c40a37cbdd765ed06976788c2d30b5a24514205718c66c6dd83a9c&amp;source=constructor" class="map__image map__iframe">
               <picture>
+                <source type="image/webp" media="(min-width: 1200px)" srcset="img/map-desktop.webp 1x, img/map-desktop@2x.webp 2x">
+                <source type="image/webp" media="(min-width: 768px)" srcset="img/map-tablet.webp 1x, img/map-tablet@2x.webp 2x">
+                <source type="image/webp" srcset="img/map-mobile.webp 1x, img/map-mobile@2x.webp 2x">
                 <source media="(min-width: 1200px)" srcset="img/map-desktop.jpg 1x, img/map-desktop@2x.jpg 2x">
                 <source media="(min-width: 768px)" srcset="img/map-tablet.jpg 1x, img/map-tablet@2x.jpg 2x">
                 <img src="img/map-mobile.jpg" srcset="img/map-mobile@2x.jpg 2x" width="320" height="350" alt="Карта Седона">
               </picture>
             </a>
-            <iframe class="map__iframe map__iframe--nojs" src="https://yandex.ru/map-widget/v1/?um=constructor%3Aff1546a805c40a37cbdd765ed06976788c2d30b5a24514205718c66c6dd83a9c&amp;source=constructor" width="100" height="350"></iframe>
+            <iframe class="map__iframe map__iframe--nojs" loading="lazy" src="https://yandex.ru/map-widget/v1/?um=constructor%3Aff1546a805c40a37cbdd765ed06976788c2d30b5a24514205718c66c6dd83a9c&amp;source=constructor" width="100" height="350"></iframe>
           </div>
         </section>
       </main>
@@ -165,28 +170,37 @@
             <li class="social__item">
               <a class="social__link social__link--vkontakte button" href="https://vk.com/htmlacademy">
                 <span class="visually-hidden">Перейти в ВКонтакте</span>
+                <svg width="24" height="24">
+                  <use xlink:href="img/stack.svg#icon-vk"></use>
+                </svg>
               </a>
             </li>
             <li class="social__item">
               <a class="social__link social__link--telegram button" href="https://t.me/htmlacademy">
                 <span class="visually-hidden">Перейти в Телеграм</span>
+                <svg width="24" height="24">
+                  <use xlink:href="img/stack.svg#icon-telegram"></use>
+                </svg>
               </a>
             </li>
             <li class="social__item">
               <a class="social__link social__link--youtube button" href="https://www.youtube.com/user/htmlacademyru">
                 <span class="visually-hidden">Перейти в youtube</span>
+                <svg width="24" height="24">
+                  <use xlink:href="img/stack.svg#icon-youtube"></use>
+                </svg>
               </a>
             </li>
           </ul>
           <a class="main-footer__copyright copyright" href="https://htmlacademy.ru/intensive/adaptive" aria-label="Ссылка на курс HTML Academy">
             <span class="copyright__text">Разработано</span>
-            <svg class="copyright__icon" width="27" height="36" fill="currentColor" role="img">
-              <use href="img/sprite.svg#icon-htmlacademy"></use>
+            <svg class="copyright__icon" width="30" height="34">
+              <use xlink:href="img/stack.svg#icon-htmlacademy"></use>
             </svg>
           </a>
         </div>
       </footer>
     </div>
-    <script src="js/script.js"></script>
+    <script src="js/script.min.js" defer></script>
   </body>
 </html>

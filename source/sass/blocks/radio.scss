@@ -25,16 +25,18 @@
   }
 
   @media (min-width: $tablet-width) {
-    width: 296px;
+    width: calc((100% - 38px) / 2);
+    margin-right: 9px;
   }
 
   @media (min-width: $desktop-width) {
-    width: 308px;
+    width: calc((100% - 38px) / 3);
+    margin-right: 18px;
   }
 
   &:last-child {
     @media (min-width: $desktop-width) {
-      width: 288px;
+      margin-right: 0;
     }
   }
 }

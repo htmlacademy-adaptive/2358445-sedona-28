@@ -12,18 +12,13 @@
   width: 48px;
   height: 48px;
   display: inline-block;
-  background-repeat: no-repeat;
-  background-position: 50% 50%;
 
-  &--vkontakte {
-    background-image: url("../../img/icon-vk.svg");
+  & svg {
+    transform: translateY(-3px);
   }
 
-  &--telegram {
-    background-image: url("../../img/icon-telegram.svg");
-  }
-
-  &--youtube {
-    background-image: url("../../img/icon-youtube.svg");
+  &:active svg,
+  &:focus svg {
+    opacity: 0.3;
   }
 }

@@ -5,17 +5,19 @@
   text-transform: uppercase;
   color: #000000;
   display: inline-block;
+  margin-top: 4px;
 
-  &:hover,
-  &:hover .copyright__icon {
+  &:hover {
     color: #81b3d2;
   }
 
   &:active,
-  &:active .copyright__icon,
-  &:focus,
-  &:focus .copyright__icon {
+  &:focus {
     color: #b3b3b3;
+
+    &::after {
+      background-color: #b3b3b3;
+    }
   }
 }
 
