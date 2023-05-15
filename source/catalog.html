@@ -3,19 +3,20 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Седона - прекрасный туристический город">
     <title>HTML Academy: Седона</title>
     <link rel="stylesheet" href="css/style.min.css">
     <link rel="icon" href="favicon.ico">
     <link rel="icon" href="img/favicons/icon.svg" type="image/svg+xml">
     <link rel="apple-touch-icon" href="img/favicons/apple.png">
     <link rel="manifest" href="manifest.webmanifest">
-    <link rel="preload" href="fonts/ptsans.woff2" as="font">
+    <link rel="preload" href="fonts/ptsans.woff2" type="font/woff2" as="font" crossorigin="anonymous">
   </head>
   <body>
     <div class="page__body">
       <header class="main-header main-header--nojs">
         <a class="main-header__logo" href="/">
-          <img src="img/logo.svg" width="185" height="96" alt="Sedona">
+          <img src="img/logo.svg" width="185" height="96" alt="лого Sedona">
         </a>
         <nav class="main-nav main-nav--closed">
           <button class="main-nav__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
@@ -59,13 +60,16 @@
             <ul class="galery__list">
               <li class="galery__item">
                 <figure class="galery__figure photo photo--large">
-                  <div class="photo__image">
+                  <a class="photo__image" href="img/photo-1-desktop@2x.jpg" alt="Неродные просторы" target="_blank" aria-label="Смотреть картинку Неродные просторы">
                     <picture>
+                      <source type="image/webp" media="(min-width: 1200px)" srcset="img/photo-1-desktop.webp 1x, img/photo-1-desktop@2x.webp 2x">
+                      <source type="image/webp" media="(min-width: 768px)" srcset="img/photo-1-tablet.webp 1x, img/photo-1-tablet@2x.webp 2x">
+                      <source type="image/webp" srcset="img/photo-1-mobile.webp 1x, img/photo-1-mobile@2x.webp 2x">
                       <source media="(min-width: 1200px)" srcset="img/photo-1-desktop.jpg 1x, img/photo-1-desktop@2x.jpg 2x">
                       <source media="(min-width: 768px)" srcset="img/photo-1-tablet.jpg 1x, img/photo-1-tablet@2x.jpg 2x">
                       <img src="img/photo-1-mobile.jpg" srcset="img/photo-1-mobile@2x.jpg 2x" width="280" height="280" alt="Неродные просторы">
                     </picture>
-                  </div>
+                  </a>
                   <figcaption class="photo__caption">
                     <div class="photo__information">
                       <h3 class="photo__title">Неродные просторы</h3>
@@ -82,13 +86,16 @@
               </li>
               <li class="galery__item">
                 <figure class="galery__figure photo">
-                  <div class="photo__image">
+                  <a class="photo__image" href="img/photo-2-desktop@2x.jpg" alt="Местная растительность" target="_blank" aria-label="Смотреть картинку Местная растительность">
                     <picture>
+                      <source type="image/webp" media="(min-width: 1200px)" srcset="img/photo-2-desktop.webp 1x, img/photo-2-desktop@2x.webp 2x">
+                      <source type="image/webp" media="(min-width: 768px)" srcset="img/photo-2-tablet.webp 1x, img/photo-2-tablet@2x.webp 2x">
+                      <source type="image/webp" srcset="img/photo-2-mobile.webp 1x, img/photo-2-mobile@2x.webp 2x">
                       <source media="(min-width: 1200px)" srcset="img/photo-2-desktop.jpg 1x, img/photo-2-desktop@2x.jpg 2x">
                       <source media="(min-width: 768px)" srcset="img/photo-2-tablet.jpg 1x, img/photo-2-tablet@2x.jpg 2x">
                       <img src="img/photo-2-mobile.jpg" srcset="img/photo-2-mobile@2x.jpg 2x" width="280" height="280" alt="Местная растительность">
                     </picture>
-                  </div>
+                  </a>
                   <figcaption class="photo__caption">
                     <div class="photo__information">
                       <h3 class="photo__title">Местная растительность</h3>
@@ -105,13 +112,16 @@
               </li>
               <li class="galery__item">
                 <figure class="galery__figure photo">
-                  <div class="photo__image">
+                  <a class="photo__image" href="img/photo-3-desktop@2x.jpg" alt="Дорога на север" target="_blank" aria-label="Смотреть картинку Дорога на север">
                     <picture>
+                      <source type="image/webp" media="(min-width: 1200px)" srcset="img/photo-3-desktop.webp 1x, img/photo-3-desktop@2x.webp 2x">
+                      <source type="image/webp" media="(min-width: 768px)" srcset="img/photo-3-tablet.webp 1x, img/photo-3-tablet@2x.webp 2x">
+                      <source type="image/webp" srcset="img/photo-3-mobile.webp 1x, img/photo-3-mobile@2x.webp 2x">
                       <source media="(min-width: 1200px)" srcset="img/photo-3-desktop.jpg 1x, img/photo-3-desktop@2x.jpg 2x">
                       <source media="(min-width: 768px)" srcset="img/photo-3-tablet.jpg 1x, img/photo-3-tablet@2x.jpg 2x">
                       <img src="img/photo-3-mobile.jpg" srcset="img/photo-3-mobile@2x.jpg 2x" width="280" height="280" alt="Дорога на север">
                     </picture>
-                  </div>
+                  </a>
                   <figcaption class="photo__caption">
                     <div class="photo__information">
                       <h3 class="photo__title">Дорога на север</h3>
@@ -128,13 +138,16 @@
               </li>
               <li class="galery__item">
                 <figure class="galery__figure photo">
-                  <div class="photo__image">
+                  <a class="photo__image" href="img/photo-4-desktop@2x.jpg" alt="Мост дьявола" target="_blank" aria-label="Смотреть картинку Мост дьявола">
                     <picture>
+                      <source type="image/webp" media="(min-width: 1200px)" srcset="img/photo-4-desktop.webp 1x, img/photo-4-desktop@2x.webp 2x">
+                      <source type="image/webp" media="(min-width: 768px)" srcset="img/photo-4-tablet.webp 1x, img/photo-4-tablet@2x.webp 2x">
+                      <source type="image/webp" srcset="img/photo-4-mobile.webp 1x, img/photo-4-mobile@2x.webp 2x">
                       <source media="(min-width: 1200px)" srcset="img/photo-4-desktop.jpg 1x, img/photo-4-desktop@2x.jpg 2x">
                       <source media="(min-width: 768px)" srcset="img/photo-4-tablet.jpg 1x, img/photo-4-tablet@2x.jpg 2x">
                       <img src="img/photo-4-mobile.jpg" srcset="img/photo-4-mobile@2x.jpg 2x" width="280" height="280" alt="Мост дьявола">
                     </picture>
-                  </div>
+                  </a>
                   <figcaption class="photo__caption">
                     <div class="photo__information">
                       <h3 class="photo__title">Мост дьявола</h3>
@@ -159,6 +172,9 @@
             <a class="presentation__video" href="#">
               <div class="presentation__image">
                 <picture>
+                  <source type="image/webp" media="(min-width: 1200px)" srcset="img/video-desktop.webp 1x, img/video-desktop@2x.webp 2x">
+                  <source type="image/webp" media="(min-width: 768px)" srcset="img/video-tablet.webp 1x, img/video-tablet@2x.webp 2x">
+                  <source type="image/webp" srcset="img/video-mobile.webp 1x, img/video-mobile@2x.webp 2x">
                   <source media="(min-width: 1200px)" srcset="img/video-desktop.jpg 1x, img/video-desktop@2x.jpg 2x" width="800" height="500">
                   <source media="(min-width: 768px)" srcset="img/video-tablet.jpg 1x, img/video-tablet@2x.jpg 2x" width="648" height="500">
                   <img src="img/video-mobile.jpg" srcset="img/video-mobile@2x.jpg 2x" width="280" height="177" alt="Видео-презентация">
@@ -178,25 +194,37 @@
             <li class="social__item">
               <a class="social__link social__link--vkontakte button" href="https://vk.com/htmlacademy">
                 <span class="visually-hidden">Перейти в ВКонтакте</span>
+                <svg width="24" height="24">
+                  <use xlink:href="img/stack.svg#icon-vk"></use>
+                </svg>
               </a>
             </li>
             <li class="social__item">
               <a class="social__link social__link--telegram button" href="https://t.me/htmlacademy">
                 <span class="visually-hidden">Перейти в Телеграм</span>
+                <svg width="24" height="24">
+                  <use xlink:href="img/stack.svg#icon-telegram"></use>
+                </svg>
               </a>
             </li>
             <li class="social__item">
               <a class="social__link social__link--youtube button" href="https://www.youtube.com/user/htmlacademyru">
                 <span class="visually-hidden">Перейти в youtube</span>
+                <svg width="24" height="24">
+                  <use xlink:href="img/stack.svg#icon-youtube"></use>
+                </svg>
               </a>
             </li>
           </ul>
           <a class="main-footer__copyright copyright" href="https://htmlacademy.ru/intensive/adaptive" aria-label="Ссылка на курс HTML Academy">
             <span class="copyright__text">Разработано</span>
+            <svg class="copyright__icon" width="30" height="34">
+              <use xlink:href="img/stack.svg#icon-htmlacademy"></use>
+            </svg>
           </a>
         </div>
       </footer>
     </div>
-    <script src="js/script.min.js"></script>
+    <script src="js/script.min.js" defer></script>
   </body>
 </html>

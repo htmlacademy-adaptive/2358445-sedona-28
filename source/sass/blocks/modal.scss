@@ -4,11 +4,11 @@
   top: 50%;
   left: 50%;
   width: 320px;
-  margin-left: -160px;
+  transform: translateX(-50%);
   background-color: $light-color;
   text-align: center;
-  padding-top: 40px;
-  z-index: 1;
+  padding-top: 45px;
+  z-index: 2;
 
   &--active {
     display: block;
@@ -22,6 +22,28 @@
   &--sucsess {
     height: 324px;
     margin-top: -162px;
+    padding-top: 38px;
+
+    @media (min-width: $tablet-width) {
+      width: 640px;
+      padding-top: 43px;
+
+      .modal__title {
+        max-width: 355px;
+      }
+
+      .modal__subtitle {
+        padding: 24px 38px 30px;
+      }
+    }
+  }
+
+  @media (min-width: $tablet-width) {
+    &--error {
+      height: 347px;
+      width: 400px;
+      padding-top: 48.5px;
+    }
   }
 }
 
@@ -29,18 +51,40 @@
   padding: 20px;
   background-color: #f2f2f2;
   margin-top: 22px;
+
+  @media (min-width: $tablet-width) {
+    padding: 44px 20px;
+  }
 }
 
 .modal__button {
   display: block;
   font-size: 18px;
+  margin: 0 auto;
 
   &--error {
     width: 180px;
     margin: 0 auto;
+
+    @media (min-width: $tablet-width) {
+      width: 272px;
+    }
+  }
+}
+
+.modal__title {
+  @media (min-width: $tablet-width) {
+    font-size: 30px;
+    max-width: 218px;
+    margin: 0 auto;
+    line-height: 40px;
   }
 }
 
 .modal__subtitle {
   padding: 24px 38px 28px;
+
+  @media (min-width: $tablet-width) {
+    padding: 24px 38px 45px;
+  }
 }
