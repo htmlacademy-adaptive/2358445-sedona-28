@@ -36,4 +36,12 @@
     padding: 0 20px 27px;
     max-width: 480px;
   }
+
+  br {
+    display: none;
+
+    @media (min-width: $tablet-width) {
+      display: initial;
+    }
+  }
 }

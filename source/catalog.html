@@ -60,7 +60,7 @@
             <ul class="galery__list">
               <li class="galery__item">
                 <figure class="galery__figure photo photo--large">
-                  <a class="photo__image" href="img/photo-1-desktop@2x.jpg" alt="Неродные просторы" target="_blank" aria-label="Смотреть картинку Неродные просторы">
+                  <a class="photo__image" href="img/photo-1-desktop@2x.jpg" target="_blank" aria-label="Смотреть картинку Неродные просторы">
                     <picture>
                       <source type="image/webp" media="(min-width: 1200px)" srcset="img/photo-1-desktop.webp 1x, img/photo-1-desktop@2x.webp 2x">
                       <source type="image/webp" media="(min-width: 768px)" srcset="img/photo-1-tablet.webp 1x, img/photo-1-tablet@2x.webp 2x">
@@ -86,7 +86,7 @@
               </li>
               <li class="galery__item">
                 <figure class="galery__figure photo">
-                  <a class="photo__image" href="img/photo-2-desktop@2x.jpg" alt="Местная растительность" target="_blank" aria-label="Смотреть картинку Местная растительность">
+                  <a class="photo__image" href="img/photo-2-desktop@2x.jpg" target="_blank" aria-label="Смотреть картинку Местная растительность">
                     <picture>
                       <source type="image/webp" media="(min-width: 1200px)" srcset="img/photo-2-desktop.webp 1x, img/photo-2-desktop@2x.webp 2x">
                       <source type="image/webp" media="(min-width: 768px)" srcset="img/photo-2-tablet.webp 1x, img/photo-2-tablet@2x.webp 2x">
@@ -112,7 +112,7 @@
               </li>
               <li class="galery__item">
                 <figure class="galery__figure photo">
-                  <a class="photo__image" href="img/photo-3-desktop@2x.jpg" alt="Дорога на север" target="_blank" aria-label="Смотреть картинку Дорога на север">
+                  <a class="photo__image" href="img/photo-3-desktop@2x.jpg" target="_blank" aria-label="Смотреть картинку Дорога на север">
                     <picture>
                       <source type="image/webp" media="(min-width: 1200px)" srcset="img/photo-3-desktop.webp 1x, img/photo-3-desktop@2x.webp 2x">
                       <source type="image/webp" media="(min-width: 768px)" srcset="img/photo-3-tablet.webp 1x, img/photo-3-tablet@2x.webp 2x">
@@ -138,7 +138,7 @@
               </li>
               <li class="galery__item">
                 <figure class="galery__figure photo">
-                  <a class="photo__image" href="img/photo-4-desktop@2x.jpg" alt="Мост дьявола" target="_blank" aria-label="Смотреть картинку Мост дьявола">
+                  <a class="photo__image" href="img/photo-4-desktop@2x.jpg" target="_blank" aria-label="Смотреть картинку Мост дьявола">
                     <picture>
                       <source type="image/webp" media="(min-width: 1200px)" srcset="img/photo-4-desktop.webp 1x, img/photo-4-desktop@2x.webp 2x">
                       <source type="image/webp" media="(min-width: 768px)" srcset="img/photo-4-tablet.webp 1x, img/photo-4-tablet@2x.webp 2x">
@@ -190,32 +190,34 @@
             <span class="visually-hidden">Перейти по хештегу #visitSEDONA</span>
             #visitSEDONA
           </a>
-          <ul class="main-footer__social social">
-            <li class="social__item">
-              <a class="social__link social__link--vkontakte button" href="https://vk.com/htmlacademy">
-                <span class="visually-hidden">Перейти в ВКонтакте</span>
-                <svg width="24" height="24">
-                  <use xlink:href="img/stack.svg#icon-vk"></use>
-                </svg>
-              </a>
-            </li>
-            <li class="social__item">
-              <a class="social__link social__link--telegram button" href="https://t.me/htmlacademy">
-                <span class="visually-hidden">Перейти в Телеграм</span>
-                <svg width="24" height="24">
-                  <use xlink:href="img/stack.svg#icon-telegram"></use>
-                </svg>
-              </a>
-            </li>
-            <li class="social__item">
-              <a class="social__link social__link--youtube button" href="https://www.youtube.com/user/htmlacademyru">
-                <span class="visually-hidden">Перейти в youtube</span>
-                <svg width="24" height="24">
-                  <use xlink:href="img/stack.svg#icon-youtube"></use>
-                </svg>
-              </a>
-            </li>
-          </ul>
+          <div class="main-footer__social">
+            <ul class="social">
+              <li class="social__item">
+                <a class="social__link social__link--vkontakte button" href="https://vk.com/htmlacademy">
+                  <span class="visually-hidden">Перейти в ВКонтакте</span>
+                  <svg width="24" height="24">
+                    <use xlink:href="img/stack.svg#icon-vk"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="social__item">
+                <a class="social__link social__link--telegram button" href="https://t.me/htmlacademy">
+                  <span class="visually-hidden">Перейти в Телеграм</span>
+                  <svg width="24" height="24">
+                    <use xlink:href="img/stack.svg#icon-telegram"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="social__item">
+                <a class="social__link social__link--youtube button" href="https://www.youtube.com/user/htmlacademyru">
+                  <span class="visually-hidden">Перейти в youtube</span>
+                  <svg width="24" height="24">
+                    <use xlink:href="img/stack.svg#icon-youtube"></use>
+                  </svg>
+                </a>
+              </li>
+            </ul>
+          </div>
           <a class="main-footer__copyright copyright" href="https://htmlacademy.ru/intensive/adaptive" aria-label="Ссылка на курс HTML Academy">
             <span class="copyright__text">Разработано</span>
             <svg class="copyright__icon" width="30" height="34">
