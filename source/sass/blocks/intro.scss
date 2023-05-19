@@ -22,14 +22,16 @@
     @media (min-resolution: 2dppx) {
       background-image: url("../img/back-desktop@2x.webp");
     }
-
-    .intro__banner img {
-      width: 461px;
-      height: 350px;
-    }
   }
 
   @media (min-width: $desktop-width) {
     height: 517px;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .intro__banner img {
+    width: 461px;
+    height: 350px;
   }
 }

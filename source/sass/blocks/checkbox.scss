@@ -14,11 +14,13 @@
   }
 
   &:focus .checkbox__mark,
+  &:focus-within .checkbox__mark,
   &:active .checkbox__mark {
     background-color: #d5d5d5;
   }
 
   &:focus .checkbox__control:checked + .checkbox__mark::before,
+  &:focus-within .checkbox__control:checked + .checkbox__mark::before,
   &:active .checkbox__control:checked + .checkbox__mark::before {
     opacity: 0.3;
   }
@@ -35,7 +37,7 @@
     margin-right: 64px;
   }
 
-  &:last-child {
+  &:nth-child(4n) {
     @media (min-width: $desktop-width) {
       margin-right: 0;
     }

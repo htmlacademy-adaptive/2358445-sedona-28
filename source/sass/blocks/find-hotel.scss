@@ -30,13 +30,13 @@
     margin: 0 auto 45px;
     max-width: 440px;
   }
+}
 
-  br {
-    display: none;
+.find-hotel__hyphenation {
+  display: none;
 
-    @media (min-width: $tablet-width) {
-      display: initial;
-    }
+  @media (min-width: $tablet-width) {
+    display: initial;
   }
 }
 
