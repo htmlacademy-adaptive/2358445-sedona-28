@@ -81,8 +81,17 @@
 
 .modal__subtitle {
   padding: 24px 38px 28px;
+  overflow-y: auto;
 
   @media (min-width: $tablet-width) {
     padding: 24px 38px 45px;
   }
+}
+
+.modal--sucsess .modal__subtitle {
+  max-height: 96px;
+}
+
+.modal--error .modal__subtitle {
+  max-height: 111px;
 }

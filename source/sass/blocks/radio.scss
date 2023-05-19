@@ -15,11 +15,13 @@
   }
 
   &:focus .radio__mark,
+  &:focus-within .radio__mark,
   &:active .radio__mark {
     background-color: #d5d5d5;
   }
 
   &:focus .radio__control:checked + .radio__mark::before,
+  &:focus-within .radio__control:checked + .radio__mark::before,
   &:active .radio__control:checked + .radio__mark::before {
     opacity: 0.3;
   }
@@ -34,7 +36,7 @@
     margin-right: 18px;
   }
 
-  &:last-child {
+  &:nth-child(3n) {
     @media (min-width: $desktop-width) {
       margin-right: 0;
     }

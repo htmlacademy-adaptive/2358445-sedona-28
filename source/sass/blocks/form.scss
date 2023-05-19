@@ -36,12 +36,12 @@
     padding: 0 20px 27px;
     max-width: 480px;
   }
+}
 
-  br {
-    display: none;
+.form__hyphenation {
+  display: none;
 
-    @media (min-width: $tablet-width) {
-      display: initial;
-    }
+  @media (min-width: $tablet-width) {
+    display: initial;
   }
 }
