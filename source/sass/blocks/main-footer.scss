@@ -7,7 +7,7 @@
   }
 
   @media (min-width: $desktop-width) {
-    padding: 2px 0 40px 0;
+    padding: 2px 0 12px 0;
   }
 }
 
@@ -33,6 +33,14 @@
   color: #000000;
 }
 
-.main-footer__social.social {
+.main-footer__social {
   margin: 28px 0 21px;
+
+  @media (min-width: $tablet-width) {
+    margin: 17px 0 21px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin: 29px 0 21px;
+  }
 }

@@ -41,25 +41,49 @@
     }
 
     @media (min-width: $desktop-width) {
-      padding-top: 51px;
+      padding-top: 53px;
     }
   }
 }
 
 .reason--grey .reason__subtitle {
   max-width: 250px;
+
+  @media (min-width: $desktop-width) {
+    max-width: 284px;
+  }
 }
 
 .reason__subtitle {
   max-width: 290px;
   margin: 0 auto;
 
+  br {
+    display: none;
+  }
+
   @media (min-width: $tablet-width) {
-    max-width: 180px;
+    max-width: 190px;
   }
 
   @media (min-width: $desktop-width) {
     max-width: 270px;
+
+    br {
+      display: initial;
+    }
+  }
+
+  .reason__hyphenation {
+    display: none;
+
+    @media (min-width: $tablet-width) {
+      display: initial;
+    }
+
+    @media (min-width: $desktop-width) {
+      display: none;
+    }
   }
 }
 

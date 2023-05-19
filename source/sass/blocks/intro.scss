@@ -28,4 +28,8 @@
       height: 350px;
     }
   }
+
+  @media (min-width: $desktop-width) {
+    height: 517px;
+  }
 }

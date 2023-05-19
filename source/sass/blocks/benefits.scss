@@ -49,6 +49,7 @@
 
   @media (min-width: $desktop-width) {
     padding: 170px 50px 0 50px;
+    min-height: 329px;
 
     &--habitation {
       background-position: 50% 68px;
@@ -72,5 +73,13 @@
 
   @media (min-width: $tablet-width) {
     margin-bottom: 24px;
+  }
+}
+
+.benefits__description br {
+  display: none;
+
+  @media (min-width: $tablet-width) {
+    display: initial;
   }
 }
